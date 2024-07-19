@@ -1,0 +1,50 @@
+.movie-card {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 20px;
+  width: 280px;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+  animation: scaleUp 0.5s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dog-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.4s;
+}
+
+.movie-card:hover .dog-image {
+  transform: scale(1.1);
+}
+
+.movie-details {
+  margin-top: 15px;
+}
+
+.movie-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.movie-author, .movie-publish-date {
+  font-size: 14px;
+  color: #666;
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.95); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
